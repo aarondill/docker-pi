@@ -1,7 +1,12 @@
+# This is a generated file. Please do not edit it directly. Edit ./generate-dependabot.sh instead.
 version: 2
 updates:
-  - package-ecosystem: "docker-compose"
-    directories:
-      - "/pihole"
+  - package-ecosystem: "gitsubmodule"
     schedule:
       interval: "daily"
+    directory: "/"
+  - package-ecosystem: "docker-compose"
+    schedule:
+      interval: "daily"
+    directories:
+      - "/pihole"
